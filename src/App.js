@@ -14,8 +14,8 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path='/' exect component={Home} />
-          <Route path='/communities' component={Communities} />
+          <Route path='/' exact component={Home} />
+          <Route path='/communities' exact component={Communities} />
         </Switch>
       </Router>
     </>

@@ -6,7 +6,7 @@ import './Navbar.css'
 class Navbar extends Component {
     state = {clicked: false}
 
-    hamdleClick = () => {
+    handleClick = () => {
         this.setState({clicked: !this.state.clicked})
     }
 
