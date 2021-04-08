@@ -11,7 +11,7 @@ export const MenuItems = [
     }, 
     {
         title: 'Coming Soon',
-        url: '/',
+        url: '/comingsoon',
         cName: 'nav-links'
     }, 
     {
