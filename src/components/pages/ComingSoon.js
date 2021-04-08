@@ -1,8 +1,11 @@
 import React from 'react';
 import '../../App.css';
+import Cards from "../Cards";
 
 export default function ComingSoon() {
   return (
-    <h1 className='comingsoon'>COMING SOON</h1>
+    <>
+        <Cards />
+    </>
   );
 }
