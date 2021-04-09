@@ -19,7 +19,7 @@ function Cards() {
               src={CaledonTrials}
               text='Caledon Trials'
               label='Caledon'
-              path='#https://caledontrails.ca/'
+              path='https://caledontrails.ca/'
             />
             <CardItem
               src={BramptonMount}
