@@ -46,7 +46,7 @@ export default function Communities() {
               homes = 'Semis, Singles, Towns, Condos'
             />
             <CommunitiesItem
-              src = {Brampton}
+              src = {Markham}
               path = '/Markham'
               community = 'Markham'
               homes = 'Semis, Singles, Towns, Condos'
