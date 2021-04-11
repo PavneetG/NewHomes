@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import './Communities.css';
+import CommunitiesItem from './CommunitiesItem';
 import Toronto from '../../images/Toronto.jpg';
 import Brampton from '../../images/Brampton.jpg';
 import Milton from '../../images/Milton.jpg';
@@ -11,86 +12,64 @@ import Hamilton from '../../images/Hamilton.jpg';
 
 export default function Communities() {
   return (
-    <>
+    <div className = "communities">
+      <div className = "spacer"/>    
+      <div className = "communities_container">
+        <div className = "communities_wrapper">
 
-    <div class="row">
-      <div class="column">
-          <div class="image-container">
-            <img src= {Toronto} alt="" style = {{width: '100%'}}/>
-            <div  class='overlay-2'>
-              <p class = "title">Toronto</p>
-              <p class = "subtitle">Semis, Singles, Towns, Condos</p>
-            </div> 
-          </div>
-      </div>
+          <ul className = "communities_items">
+            <CommunitiesItem
+              src = {Toronto}
+              path = '/Toronto'
+              community = 'Toronto'
+              homes = 'Semis, Singles, Towns, Condos'
+            />
+            <CommunitiesItem
+              src = {Brampton}
+              path = '/Brampton'
+              community = 'Brampton'
+              homes = 'Semis, Singles, Towns, Condos'
+            />
+            <CommunitiesItem
+              src = {Milton}
+              path = '/Milton'
+              community = 'Milton'
+              homes = 'Semis, Singles, Towns, Condos'
+            />
+          </ul>
 
-      <div class="column">
-          <div class="image-container">
-            <img src= {Brampton} alt="" style = {{width: '100%'}}/>
-            <div  class='overlay-2'>
-              <p class = "title">Brampton</p>
-              <p class = "subtitle">Semis, Singles, Towns, Condos</p>
-            </div> 
-          </div>
-      </div>
+          <ul className = "communities_items">
+            <CommunitiesItem
+              src = {Caledon}
+              path = '/Caledon'
+              community = 'Caledon'
+              homes = 'Semis, Singles, Towns, Condos'
+            />
+            <CommunitiesItem
+              src = {Brampton}
+              path = '/Markham'
+              community = 'Markham'
+              homes = 'Semis, Singles, Towns, Condos'
+            />
+            <CommunitiesItem
+              src = {RichmondHill}
+              path = '/Richmond-Hill'
+              community = 'Richmond Hill'
+              homes = 'Semis, Singles, Towns, Condos'
+            />
+          </ul>
 
-      <div class="column">
-          <div class="image-container">
-            <img src= {Milton} alt="" style = {{width: '100%'}}/>
-            <div  class='overlay-2'>
-              <p class = "title">Milton</p>
-              <p class = "subtitle">Semis, Singles, Towns, Condos</p>
-            </div> 
-          </div>
-      </div>
-    </div>
+          <ul className = "communities_items">
+            <CommunitiesItem
+              src = {Hamilton}
+              path = '/Hamilton'
+              community = 'Hamilton'
+              homes = 'Semis, Singles, Towns, Condos'
+            />
+          </ul>
 
-    <div class="row">
-      <div class="column">
-          <div class="image-container">
-            <img src= {Caledon} alt="" style = {{width: '100%'}}/>
-            <div  class='overlay-2'>
-              <p class = "title">Caledon</p>
-              <p class = "subtitle">Semis, Singles, Towns, Condos</p>
-            </div> 
-          </div>
-      </div>
-
-      <div class="column">
-          <div class="image-container">
-            <img src= {Markham} alt="" style = {{width: '100%'}}/>
-            <div  class='overlay-2'>
-              <p class = "title">Markham</p>
-              <p class = "subtitle">Semis, Singles, Towns, Condos</p>
-            </div> 
-          </div>
-      </div>
-
-      <div class="column">
-          <div class="image-container">
-            <img src= {RichmondHill} alt="" style = {{width: '100%'}}/>
-            <div  class='overlay-2'>
-              <p class = "title">Richmond Hill</p>
-              <p class = "subtitle">Semis, Singles, Towns, Condos</p>
-            </div> 
-          </div>
+        </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="column">
-          <div class="image-container">
-            <img src= {Hamilton} alt="" style = {{width: '100%'}}/>
-            <div  class='overlay-2'>
-              <p class = "title">Hamilton</p>
-              <p class = "subtitle">Semis, Singles, Towns, Condos</p>
-            </div> 
-          </div>
-      </div>
-
-    </div>
-
-
-    </>
   );
 }
